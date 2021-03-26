@@ -1,0 +1,9 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelSlider>
+<div class="row banner">
+    @foreach (var row in Model)
+    {
+        <div class="col-6 bn-trai">
+            <img src="~/Public/Image/Slider/@row.Img" width="100%" alt="Alternate Text" />
+        </div>
+    }
+</div>

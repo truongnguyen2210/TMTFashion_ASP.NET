@@ -1,0 +1,12 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelTopic>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            @foreach (var row_r in Model)
+            {
+                @Html.Action("SubListTopic", "Module", new { @id = row_r.Id })
+
+            }
+        </ul>
+    </div>
+</nav>

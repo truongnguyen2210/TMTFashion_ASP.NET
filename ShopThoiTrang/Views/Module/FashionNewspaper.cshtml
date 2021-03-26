@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ShopThoiTrang.PostTopic>
+<div class="card tintuc mt-3">
+    <div class="card-header">
+        tin tức
+    </div>
+    <div class="card-body">
+        @foreach (var row in Model)
+        {
+            <div class="mottin-thoitrang">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="@row.PostSlug"><img src="~/Public/Image/Newspaper/@row.PostImg" width="100%" height="70%" alt="Alternate Text" /></a>
+                    </div>
+                    <div class="col-6">
+                        <p class="ttt-tieude"><a href="@row.PostSlug">@row.PostTitle</a></p>
+                        <p class="ttt-ngaydang">@row.PostDayCreat</p>
+                        <p class="ttt-loaitin">@row.PostTop</p>
+                    </div>
+                </div>
+            </div>@*het mottin-thoitrang  *@
+        }
+    </div>
+</div>
+@*  het tin tuc*@

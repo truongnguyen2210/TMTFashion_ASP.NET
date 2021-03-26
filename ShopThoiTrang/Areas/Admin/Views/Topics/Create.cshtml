@@ -1,0 +1,61 @@
+﻿@model ShopThoiTrang.Models.ModelTopic
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm("Create", "Topics", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="cart">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    <strong class="text-danger text-uppercase">thêm Chủ Đề Bài Viết</strong>
+                </div>
+                <div class="col-6 float-right text-right">
+                    <a href="@Url.Action("Index", "Topics")" class="btn btn-sm btn-danger">Preview</a>
+                    <button type="submit" class="btn btn-info btn-sm">Save[Add]</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label><strong>Tên Chủ Đề (<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Từ Khóa SEO(<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.TextAreaFor(model => model.MetaKey, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.MetaKey, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Mô Tả (<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.TextAreaFor(model => model.MetaDesc, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.MetaDesc, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group text-danger">
+                        @ViewBag.Error
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label><strong>Chủ Đề Bố(<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.DropDownListFor(model => model.ParentId,(SelectList)ViewBag.listParent,"[----None----]", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.ParentId, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Trạng Thái (<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.DropDownListFor(model => model.Status, new[]
+                        { new SelectListItem { Text = "Xuất Bản", Value = "1" },
+                       new SelectListItem { Text = "Chưa Xuất Bản", Value = "2" } },
+                       new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

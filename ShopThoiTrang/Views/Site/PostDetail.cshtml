@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelPost>
+@{
+    ViewBag.Title = "PostDetail";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-12 Topic">
+            @Html.Action("listTopic", "Module")
+        </div>
+        @foreach (var row in ViewBag.row_pos)
+        {
+            <div class="col-12 mt-1">
+                <img src="~/Public/Image/Newspaper/@row.Img" width="100%" alt="Alternate Text" />
+                <h3 class="tieude-tintuc mt-2">@row.Title</h3>
+                <h5 class="ttt-ngaydang">@row.Created_At</h5>
+                <p class="noidung-tintuc">@row.Detail</p>
+            </div>
+        }
+        <div class="col-12 loai-sanpham">
+            <h3 class="smp-tieude text-center">Bài Viết Liên Quan</h3>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-4">
+                        <div class="card mb-3">
+                            <a href="@item.Slug"><img class="card-img-top" src="~/Public/Image/Newspaper/@item.Img" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <a href="@item.Slug"><h5 class="card-title">@item.Title</h5></a>
+                                <p class="card-text  text-truncate" style="max-width: 400px;">@item.Detail</p>
+                                <p class="card-text"><small class="text-muted">@item.Created_At</small></p>
+                            </div>
+                        </div>
+                    </div>@*het 1 tin*@
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelPost>
+@{
+    ViewBag.Title = "PostPage";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            @foreach (var row in Model)
+            {
+               <h3 class="mt-2"><a href="#"><i class="fa fa-medal"></i> @row.Title</a></h3>
+               <img src="~/Public/Image/Newspaper/@row.Img" width="100%" alt="Alternate Text" />
+            }
+        </div>
+    </div>
+</div>
+
+
+

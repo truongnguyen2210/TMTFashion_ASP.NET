@@ -1,0 +1,76 @@
+﻿@model PagedList.PagedList<ShopThoiTrang.Models.ModelContact>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger text-uppercase"><strong>Tất cả liên hệ Tạm Xóa</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Index", "Contacts")" class="btn btn-sm btn-info">Preview</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-warning text-uppercase">
+                    <th scope="col">Tiêu đề</th>
+                    <th scope="col">Họ Tên</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">trạng thái</th>
+                    <th scope="col">Chức Năng </th>
+                    <th scope="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <td>
+                            <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                                <a href="@Url.Action("Details", "Contacts", new { id = row.Id })">@row.Title</a>
+                            </span>
+                        </td>
+                        <td>@row.FullName</td>
+                        <td>@row.Email</td>
+                        <td>
+                            @if (row.ReplayDetail != null)
+                            {
+                                <div class="text-nowrap text-white dis-inline text-center" style=" background-color: deepskyblue; border-radius: 3px;">
+                                    Đã trả lời
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="text-nowrap text-white text-center  dis-inline" style=" background-color: crimson; border-radius: 3px;">
+                                    Chưa trả lời
+                                </div>
+                            }
+                        </td>
+                        <td>             
+                            <a href="@Url.Action("Restore", "Contacts", new { id = row.Id })" class="btn btn-sm btn-primary">Restore</a>
+                            <a href="@Url.Action("Delete", "Contacts", new { id = row.Id })" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                        <td>@row.Id</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", "Menus", new { page }))
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @* het phan trang*@
+</div>

@@ -1,0 +1,104 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelProducts>
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-4">
+            @Html.Action("ListCategory", "Module")
+            @Html.Action("ProductBuy", "Module")
+            @Html.Action("FashionNewspaper", "Module")
+            <div class="card vitri mt-3">
+                <div class="card-header">
+                    Vị Trí
+                </div>
+                <div class="card-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.451709581085!2d69.22730441546918!3d41.21192577928071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6194733710f9%3A0x74547ed2e9280ee8!2sTMT%20fashion!5e0!3m2!1svi!2s!4v1606979854077!5m2!1svi!2s"
+                            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+            @*  het vi tri*@
+        </div>
+        @*  het noi dung trai*@
+        <div class="col-8">
+            <div class="row">
+                @foreach (var now in ViewBag.row_p)
+                {
+                    <div class="col-6 anh-sp">
+                        <img src="~/Public/Image/Product/@now.Img" width="100%" alt="Alternate Text" />
+                    </div>
+                    <div class="col-6 pt-5">
+                        <h3 class="ten-sp">@now.Name</h3>
+                        <h5 class="gia-sp">@now.Price$</h5>
+                        <p><a href="#">Hướng dẫn chọn size</a></p>
+                        <h5 class="Chonmau">
+                            Chọn Màu:
+                            <a href="#" style="color: orangered;"><i class="fa fa-tshirt"></i></a>
+                            <a href="#" style="color: palevioletred;"><i class="fa fa-tshirt"></i></a>
+                            <a href="#" style="color: gray;"><i class="fa fa-tshirt"></i></a>
+                            <a href="#" style="color: yellow;"><i class="fa fa-tshirt"></i></a>
+                        </h5>
+                        <h5 class="soluong">
+                            Số Lượng:
+                            <input class="text-center" type="number" name="name" value="1" max="10" min="1" />
+                        </h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="@Url.Action("AddItem","Cart", new {productId = @now.Id})"><div class="mua-hang them-gio-hang">Thêm Vào Giỏ Hàng</div></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#"><div class="mua-hang mua-ngay">Mua Ngay</div></a>
+                            </div>
+                            <div class="col-12">
+                                <a href="#">
+                                    <div class="mua-hang da-co-hang">
+                                        <i class="fa fa-store-alt"></i> Đang có tại các cửa hàng
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <h5 class="chinh-sach-mua-hang"><i class="fa fa-award"></i> BẢO HÀNH SẢN PHẨM 90 NGÀY</h5>
+                        <h5 class="chinh-sach-mua-hang"><i class="fa fa-award"></i> ĐỔI HÀNG TRONG VÒNG 30 NGÀY</h5>
+                        <h5 class="chinh-sach-mua-hang"><i class="fa fa-award"></i> HOTLINE BÁN HÀNG 1900 633 501</h5>
+                    </div>
+                    @*  het col-6*@
+                    <div class="col-12">
+                        <h5 class="mo-ta">Mô Tả</h5>
+                        <p class="nd-mo-ta">
+                           @now.Detail
+                        </p>
+                    </div>
+                }
+            <div class="row san-pham-moi">
+                <div class="col-12 loai-sanpham">
+                    <h3 class="smp-tieude text-center">Sản Phẩm Cùng Danh Mục</h3>
+                </div>
+                @foreach (var row in Model)
+                {
+                    <div class="col-4 mt-2">
+                        <div class="card sp-cha">
+                            <a href="~/@row.Slug">
+                                <img src="~/Public/Image/Product/@row.Img" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-footer sp-layer2">
+                                <p class="sp-gia text-center">
+                                    <a href="#"><i class="fa fa-shopping-cart"></i> </a>
+                                    <i class="sp-r">@row.Price $</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    @* het 1 san pham*@
+                }
+
+            </div>
+                @*  het san pham cung danh muc*@
+            </div>
+            @* het row*@
+        </div>
+        @*het noi dung phai*@
+    </div>
+</div>

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ShopThoiTrang.RouteConfig" Collapsed="true">
+    <Position X="33" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.MvcApplication" Collapsed="true">
+    <Position X="26" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.XMessage" Collapsed="true">
+    <Position X="31.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAA=</HashCode>
+      <FileName>Library\XMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.PostTopic" Collapsed="true">
+    <Position X="29.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAECAAAAAIAAAgAAAEAQAAAgAAAAAAA=</HashCode>
+      <FileName>Models\PostTopic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.ProductCategory" Collapsed="true">
+    <Position X="31.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAIAAI=</HashCode>
+      <FileName>Models\ProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.AdminAreaRegistration">
+    <Position X="24.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\AdminAreaRegistration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.AuthController" Collapsed="true">
+    <Position X="26" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\AuthController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.BaseController">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\BaseController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.CategoriesController" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAAARAACAAAACAAAAAAEIAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\CategoriesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.ContactsController" Collapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\ContactsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.DashboardController">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\DashboardController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.LinksController" Collapsed="true">
+    <Position X="15" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\LinksController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.MenusController" Collapsed="true">
+    <Position X="33" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\MenusController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.OrderDetailsController" Collapsed="true">
+    <Position X="21.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\OrderDetailsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.OrdersController">
+    <Position X="1.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\OrdersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.PostsController" Collapsed="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFACARAACAAAACAAAAAAEIAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\PostsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.ProductsController" Collapsed="true">
+    <Position X="10.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFACARAACAAAACAAAAAAEIAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\ProductsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.SlidersController" Collapsed="true">
+    <Position X="29.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFACARAACAAAACAAAAAAEIAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\SlidersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.TopicsController" Collapsed="true">
+    <Position X="17.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFACARAACAAAACAAAAAAEIAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\TopicsController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Areas.Admin.Controllers.UsersController" Collapsed="true">
+    <Position X="19.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAFACARAACAAAACAAAAAAEIgEACAAEAAAAAAAA=</HashCode>
+      <FileName>Areas\Admin\Controllers\UsersController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Controllers.CartController" Collapsed="true">
+    <Position X="27.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAARAAAAAQAAAAAAgAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\CartController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Controllers.ContactController" Collapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\ContactController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Controllers.CustomerController" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAACAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\CustomerController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Controllers.ModuleController" Collapsed="true">
+    <Position X="24.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAEQAAAAAAAQSAAAAAAAQAAAAgQAAAAA=</HashCode>
+      <FileName>Controllers\ModuleController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Controllers.SiteController" Collapsed="true">
+    <Position X="27.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAQAAAAEAAAAAAAABQBEAgQAAEAAAAAEAQ=</HashCode>
+      <FileName>Controllers\SiteController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Library.Mystring" Collapsed="true">
+    <Position X="27.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Library\Mystring.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelCart" Collapsed="true">
+    <Position X="24.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\ModelCart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelCategories" Collapsed="true">
+    <Position X="26" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECAAAEBAAAAAACAAAAAAwAAAAAAAAkAgAAAAQAAAA=</HashCode>
+      <FileName>Models\ModelCategories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelContact" Collapsed="true">
+    <Position X="27.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAEJCAAAMAAAAAAAAAAAAAAAACgAAAAIAAACAA=</HashCode>
+      <FileName>Models\ModelContact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelLink" Collapsed="true">
+    <Position X="29.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAQAAAAQAAAA=</HashCode>
+      <FileName>Models\ModelLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelMenu" Collapsed="true">
+    <Position X="31.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECAAAEBAAAAAAgAAAAAAQAAAAAAAAkAwAAQAAAAAA=</HashCode>
+      <FileName>Models\ModelMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelOrder" Collapsed="true">
+    <Position X="33" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBACAAAEBAAAAAAAACIgACoAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Models\ModelOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelOrderDetail" Collapsed="true">
+    <Position X="24.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\ModelOrderDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelPost" Collapsed="true">
+    <Position X="26" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAUBAAEAEACAAAAAAgAAAAAAAAkAQAAAAQACAA=</HashCode>
+      <FileName>Models\ModelPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelProducts" Collapsed="true">
+    <Position X="27.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAUBQAAAAACAEAIAAyAAAAAAAAkAAAAAAQACAA=</HashCode>
+      <FileName>Models\ModelProducts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelSlider" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECAAAUBAAAAAAgAAAAAAQAAAAAAAAkAAAAQAAAAAA=</HashCode>
+      <FileName>Models\ModelSlider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelTopic" Collapsed="true">
+    <Position X="31.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAEBAAAAAACAAAAAAwAAAAAAAAkAgAAAAQAAAA=</HashCode>
+      <FileName>Models\ModelTopic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ModelUser" Collapsed="true">
+    <Position X="33" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAgAUBCAAAMCAAAAAAAAAAAAAAAAkAQAAIAAAAAA=</HashCode>
+      <FileName>Models\ModelUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Models.ShopThoiTrangDBContext" Collapsed="true">
+    <Position X="26" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECACAAAAAAAAAACBAAAAAACAAIEAAACAAAACAABAA=</HashCode>
+      <FileName>Models\ShopThoiTrangDBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopThoiTrang.Properties.Settings" Collapsed="true">
+    <Position X="24.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    @*------------------------------- link bootstrap ------------------------------------*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    @*------------------------------- link jquery ------------------------------------*@
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    @*------------------------------- link css ------------------------------------*@
+    <link href="~/Public/Css/LayoutAdmin.css" rel="stylesheet" />
+    @*------------------------------- link fontawesome ------------------------------------*@
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fd76fb5f52.js" crossorigin="anonymous"></script>
+
+    <script src="~/Public/ckeditor/ckeditor.js"></script>
+
+
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <section class="menutop">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand ten-shop" href="#">
+                    <img src="~/Public/Image/logo.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    @* thong tin nguoi quan tri*@
+                    <div class="text-white">
+                        @Session["FullNameAdmin"]
+                         <img src="~/Public/Image/User/@Session["ImgAdmin"]" alt="..." class="rounded-circle">
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </section>
+    @*=====================het menutop=====================*@
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-product-hunt"></i> Sản Phẩm
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Products")">Danh Sách Sản Phẩm</a></li>
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Categories")">Loại Sản Phẩm</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-chart-line"></i> Đơn Hàng
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Orders")">Danh Sách Đơn Hàng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-address-book"></i> Khách Hàng
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("Customer", "Users")">Danh Sách Khách Hàng</a></li>
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("Index", "Contacts")">Liên Hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fa fa-newspaper"></i>Bài Viết
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse4" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Posts")">Danh Sách Bài Viết </a></li>
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Topics")">Chủ Đề Bài Viết</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fa fa-chart-pie"></i> Giao Diện
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse5" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Menus")">Menu</a></li>
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Sliders")">Slider</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fa fa-cogs"></i> Hệ Thống
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("index", "Users")">Thành Viên</a></li>
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("Create", "Users")">Thêm Thành Viên</a></li>                
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fa fa-user-circle"></i> Thông Tin
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("Details", "Users", new { id = Session["UserIdAdmin"] })">Thông Tin Cá Nhân</a></li>
+                                        <li class="list-group-item"><i class="fa fa-circle-notch"></i> <a href="@Url.Action("Logout", "Auth")">Đăng Xuất</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        @*  het mot cart*@
+                    </div>
+                </div>
+                @*=====================het menuleft=====================*@
+                <div class="col-9 pt-3"> @RenderBody()</div>
+            </div>
+        </div>
+    </section>
+    @*=====================het content=====================*@
+    <section class="clearfix footer" style="background-color: #343a40;">
+        <div class="container" >
+            <div class="footter mt-3">
+                <!-- Footer -->
+                <footer class="page-footer font-small mdb-color pt-4">
+
+                    <!-- Footer Links -->
+                    <div class="container text-center text-md-left">
+
+                        <!-- Footer links -->
+                        <div class="row text-center text-md-left mt-3 pb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <a class="navbar-brand ten-shop" href="#">
+                                    <img src="~/Public/Image/logo.png" />
+                                </a>
+                                <p style="color: 	white;">
+                                    Công ty TNHH Công nghệ Tech Việt Nam
+                                    Số ĐKKD 999999999 do Sở KHĐT Thành phố Hồ Chí Minh cấp ngày 30/12/2015
+                                    Người đại diện: Trưởng Thanh Nguyễn
+                                    Địa chỉ: Số 105/562 Đường Lương Định Của, Phường An Phú, Quận 2, TP.HCM
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+
+                            <!-- Grid column -->
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Danh Mục</h6>
+                                <p>
+                                    <a href="#!">CÔNG NGHỆ</a>
+                                </p>
+                                <p>
+                                    <a href="#!">THỂ THAO</a>
+                                </p>
+                                <p>
+                                    <a href="#!">ĐIỆN ẢNH</a>
+                                </p>
+                                <p>
+                                    <a href="#!">GAME ONLINE</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <hr class="w-100 clearfix d-md-none">
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+                                <p>
+                                    <a href="#!">Your Account</a>
+                                </p>
+                                <p>
+                                    <a href="#!">Affiliate</a>
+                                </p>
+                                <p>
+                                    <a href="#!">LIÊN KẾT</a>
+                                </p>
+                                <p>
+                                    <a href="#!">TRỢ GIÚP</a>
+                                </p>
+                            </div>
+
+                            <!-- Grid column -->
+                            <hr class="w-100 clearfix d-md-none">
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                <h6 class="text-uppercase mb-4 font-weight-bold">Liên Hệ</h6>
+                                <p style="color: 	white;">
+                                    <i class="fas fa-home mr-3"></i> 47/7 Khu Phố 2, Quận 2, TPHCM
+                                </p>
+                                <p style="color: 	white;">
+                                    <i class="fas fa-envelope mr-3"></i> truongthanhnguyen2210@gmail.com
+                                </p>
+                                <p style="color: 	white;">
+                                    <i class="fas fa-phone mr-3"></i> + 84 234 567 88
+                                </p>
+                                <p style="color: 	white;">
+                                    <i class="fas fa-print mr-3"></i> + 84 234 567 89
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Footer links -->
+
+                        <hr>
+
+                        <!-- Grid row -->
+                        <div class="row d-flex align-items-center">
+
+                            <!-- Grid column -->
+                            <div class="col-md-7 col-lg-8">
+
+                                <!--Copyright-->
+                                <p class="text-center text-md-left" style="color: white;">
+                                    © 2020 Copyright:
+                                    <a href="#">
+                                        Trưởng Thanh Nguyễn
+                                    </a>
+                                </p>
+
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                                <!-- Social buttons -->
+                                <div class="text-center text-md-right">
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- Grid column -->
+
+                        </div>
+                        <!-- Grid row -->
+
+                    </div>
+                    <!-- Footer Links -->
+
+                </footer>
+                <!-- Footer -->
+            </div>
+            <!--************************************* hết khối footer  *******************************-->
+        </div>
+    </section>
+    @* **********************************hết footer*********************************@
+    @*------------------------------- link jquery ------------------------------------*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.0.0.slim.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+</body>
+</html>

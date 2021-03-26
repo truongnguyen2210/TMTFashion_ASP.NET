@@ -1,0 +1,52 @@
+﻿@model ShopThoiTrang.Models.ModelContact
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="cart">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6">
+                <strong class="text-danger text-uppercase">Xóa Phản Hồi: @Html.DisplayFor(model => model.FullName)</strong>
+            </div>
+            <div class="col-6 float-right text-right">
+                <a href="@Url.Action("Trash", "Contacts")" class="btn btn-sm btn-info">Preview</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <th scope="row">Họ Và Tên: </th>
+                    <td>@Html.DisplayFor(model => model.FullName)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Email: </th>
+                    <td>@Html.DisplayFor(model => model.Email)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Số Điện Thoại: </th>
+                    <td>@Html.DisplayFor(model => model.Phone)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Tiêu Đề: </th>
+                    <td>@Html.DisplayFor(model => model.Title)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nội Dung: </th>
+                    <td>@Html.DisplayFor(model => model.Detail)</td>
+                </tr>
+                <tr>
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <th> <button type="submit" class="btn btn-danger btn-sm">Delete</button></th>   
+                    }
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+

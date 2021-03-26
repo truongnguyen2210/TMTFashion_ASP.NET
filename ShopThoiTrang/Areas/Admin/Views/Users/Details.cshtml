@@ -1,0 +1,46 @@
+﻿@model ShopThoiTrang.Models.ModelUser
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger text-uppercase"><strong> @Html.DisplayFor(model => model.FullName)</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Edit", "Users", new { id = Session["UserIdAdmin"] })" class="btn btn-sm btn-info">Change</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-4">
+                <img src="~/Public/Image/User/@Html.DisplayFor(model => model.Img)" width="100%" alt="Alternate Text" />
+            </div>
+            <div class="col-8">
+                <table class="table table-hover">  
+                    <tbody>
+                        <tr>
+                            <td>Họ Và Tên:</td>
+                            <td>@Html.DisplayFor(model => model.FullName)</td>
+                        </tr>
+                        <tr>
+                            <td>Tên Đăng Nhập:</td>
+                            <td>@Html.DisplayFor(model => model.UserName)</td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td>@Html.DisplayFor(model => model.Email)</td>
+                        </tr>
+                        <tr>
+                            <td>Số Điện Thoại:</td>
+                            <td>@Html.DisplayFor(model => model.Phone)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        @* het row*@
+    </div>
+</div>

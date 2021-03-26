@@ -1,0 +1,8 @@
+﻿ @if(TempData.ContainsKey("name"))
+ {
+     var sms = (XMessage)TempData["thongbao"];
+    <div class="alert text-center alert-@sms.Type">@sms.Message</div>
+ }
+ 
+
+

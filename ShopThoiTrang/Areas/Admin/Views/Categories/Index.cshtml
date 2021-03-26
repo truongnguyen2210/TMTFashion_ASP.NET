@@ -1,0 +1,72 @@
+﻿@model PagedList.IPagedList<ShopThoiTrang.Models.ModelCategories>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger"><strong>DANH SÁCH LOẠI SẢN PHẨM</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Create", "Categories")" class="btn btn-sm btn-info">Add</a>
+                <a href="@Url.Action("Trash", "Categories")" class="btn btn-sm btn-danger">Trash</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-warning">
+                    <th scope="col">Tên Loại Sản Phẩm </th>
+                    <th scope="col">Slug</th>
+                    <th scope="col">Chức Năng </th>
+                    <th scope="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <th>@row.Name</th>
+                        <td>@row.Slug</td>
+                        <td>
+                            @if (row.Status == 1)
+                            {
+                                <a href="@Url.Action("Status", "Categories", new { id = row.Id })" class="btn btn-sm btn-dark">
+                                    <i class="fa fa-toggle-on"></i>
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="@Url.Action("Status", "Categories", new { id = row.Id })" class="btn btn-sm btn-dark">
+                                    <i class="fa fa-toggle-off"></i>
+                                </a>
+                            }
+
+                            <a href="@Url.Action("Edit", "Categories", new { id = row.Id })" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                            <a href="@Url.Action("Deltrash", "Categories", new { id = row.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i></a>
+                        </td>
+                        <td>@row.Id</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @* het row*@
+    <div class="row">
+        <div class="col-12 text-center">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", "Categories", new { page }))
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @* het phan trang*@
+</div>

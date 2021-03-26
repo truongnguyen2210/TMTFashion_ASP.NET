@@ -1,0 +1,86 @@
+﻿@model ShopThoiTrang.Models.ModelContact
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+@if (@ViewBag.thanhcong == 1)
+{
+    <Script>alert('Gửi Thành Công, Chúng Tôi Sẽ Sớm Phản Hồi Cho Bạn.');</Script>
+}
+@using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="text-uppercase text-center text-info"><strong>Liên Hệ Với Chúng Tôi</strong></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>Họ Và Tên</label>
+                                    @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Tiêu Đề</label>
+                                    @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group text-danger">
+                                    @ViewBag.Error
+                                </div>
+                            </div>
+                            @*  het col-6*@
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <label>Số Điện Thoại</label>
+                                    @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            @* het col-6*@
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label>Nội Dung</label>
+                                @Html.TextAreaFor(model => model.Detail, new
+                                {
+                                    @class = "form-control"@*, @id= "txt_content", @name = "txt_content"*@})
+                                @Html.ValidationMessageFor(model => model.Detail, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-sm btn-info">Gửi</button>
+                            </div>
+                        </div>
+                        </div>
+                        @* het row*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<div class="bando mt-5" style="width: 100%; margin-bottom: -50px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.451709581085!2d69.22730441546918!3d41.21192577928071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6194733710f9%3A0x74547ed2e9280ee8!2sTMT%20fashion!5e0!3m2!1svi!2s!4v1606979854077!5m2!1svi!2s"
+            width="100%" height="500px" frameborder="0" style="border:1px solid gray;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+</div>
+@*<script type="text/javascript">
+        $(function () {
+            if (CKEDITOR.instances['txt_content']) {
+                CKEDITOR.remove(CKEDITOR.instances['txt_content']);
+            }
+            CKEDITOR.config.width = 700;
+            CKEDITOR.config.height = 300;
+            CKEDITOR.replace('txt_content', {});
+        })
+    </script>*@

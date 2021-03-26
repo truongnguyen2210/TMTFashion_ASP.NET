@@ -1,0 +1,56 @@
+﻿@model PagedList.IPagedList<ShopThoiTrang.Models.ModelCategories>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger"><strong>DANH SÁCH LOẠI SẢN PHẨM TẠM XÓA</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Index", "Categories")" class="btn btn-sm btn-danger">Preview</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-warning">
+                    <th scope="col">Tên Loại Sản Phẩm </th>
+                    <th scope="col">Slug</th>
+                    <th scope="col">Chức Năng </th>
+                    <th scope="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <th>@row.Name</th>
+                        <td>@row.Slug</td>
+                        <td>
+                            <a href="@Url.Action("Restore", "Categories", new { id = row.Id })" class="btn btn-sm btn-info">Restore</a>
+                            <a href="@Url.Action("Delete", "Categories", new { id = row.Id })" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                        <td>@row.Id</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @* het row*@
+    <div class="row">
+        <div class="col-12 text-center">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        @Html.PagedListPager(Model, page => Url.Action("Trash", "Categories", new { page }))
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @* het phan trang*@
+</div>

@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelProducts>
+<div class="card sp-khuyenmai mt-3">
+    <div class="card-header">
+        Sản Phẩm Mới
+    </div>
+    <div class="card-body">
+        @foreach (var row in Model)
+        {
+            <div class="motsanpham-khuyenmai">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="@row.Slug"><img src="~/Public/Image/Product/@row.Img" width="100%" height="150px" alt="Alternate Text" /></a>
+                    </div>
+                    <div class="col-6 mt-4">
+                        <p class="ttt-tieude"><a href="@row.Slug">@row.Name</a></p>
+                        <p class="gia-km"><i class="sp-r">@row.Price $</i> <del><i class="sp-r">@row.PriceSale $</i></del></p>
+                    </div>
+                </div>
+            </div>@*het mot san pham khuyen mai*@
+        }
+    </div>
+</div>
+@*  het san pham khuyen mai*@

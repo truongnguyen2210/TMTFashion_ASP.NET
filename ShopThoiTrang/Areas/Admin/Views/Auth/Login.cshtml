@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .khung{
+            max-width: 600px;
+            height: 400px;
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm("Login", "Auth", FormMethod.Post))
+    {
+    <div class="khung mt-md-5 p-5">
+        <h3 class="text-center text-danger">Đăng Nhập Hệ Thống</h3>
+        <div class="form-group">
+            <label>Tên Đăng Nhập(*)</label>
+            <input name="username" type="text" required class="form-control" placeholder="Tên đăng nhập hoặc email" />
+        </div>
+        <div class="form-group">
+            <label>Mật Khẩu(*)</label>
+            <input name="password" type="password" required class="form-control" placeholder="Mật khẩu" />
+        </div>
+        <div class="form-group text-right">
+            <button type="submit" class="btn btn-info">Đăng Nhập</button>
+        </div>
+        <div class="form-group">
+           @Html.Raw(ViewBag.Error)
+        </div>
+    </div>
+    }
+</body>
+</html>

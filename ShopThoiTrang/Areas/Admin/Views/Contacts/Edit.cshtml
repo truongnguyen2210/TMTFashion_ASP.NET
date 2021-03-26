@@ -1,0 +1,50 @@
+﻿@model ShopThoiTrang.Models.ModelContact
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm("Edit", "Contacts", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="cart">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    <strong class="text-info  text-uppercase">Phản Hồi: @Html.DisplayFor(model => model.FullName)</strong>
+                </div>
+                <div class="col-6 float-right text-right">
+                    <a href="@Url.Action("Index", "Contacts")" class="btn btn-sm btn-danger">Preview</a>
+                    <button type="submit" class="btn btn-info btn-sm">Send Mail</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label><strong>Tiêu Đề(<spant class="text-danger">*</spant>)</strong></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Nội Dung(<spant class="text-danger">*</spant>)</strong></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+                    </div>
+                    <div class="form-group invisible pos-absolute">
+                        @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Detail, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Created_At, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                    <div class="form-group text-danger">
+                        @ViewBag.Error
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </div>
+}

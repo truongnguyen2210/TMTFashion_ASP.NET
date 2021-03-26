@@ -1,0 +1,58 @@
+﻿@model PagedList.IPagedList<ShopThoiTrang.Models.ModelTopic>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Trash";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger text-uppercase"><strong>DANH SÁCH  CHỦ ĐỀ BÀI VIẾT Tạm xóa</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Index", "Topics")" class="btn btn-sm btn-info">Preview</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        @Html.Partial("_Message")
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-warning">
+                    <th scope="col">Tên Mẫu Tin</th>
+                    <th scope="col">Đường Dẫn</th>
+                    <th scope="col">Chức Năng</th>
+                    <th scope="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <td>@row.Name</td>
+                        <td>@row.Slug</td>
+                        <td>                           
+                            <a href="@Url.Action("Restore", "Topics", new { id = row.Id })" class="btn btn-sm btn-info">Restore</a>
+                            <a href="@Url.Action("Delete", "Topics", new { id = row.Id })" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
+                        <td>@row.Id</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @* het row*@
+    <div class="row">
+        <div class="col-12 text-center">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", "Posts", new { page }))
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @* het phan trang*@
+</div>
+

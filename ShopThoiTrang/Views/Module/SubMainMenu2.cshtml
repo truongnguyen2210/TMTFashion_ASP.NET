@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelMenu>
+@{ var row = ViewBag.row_m;}
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       @row.Name
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        @foreach (var row_mnc in Model)
+        {
+            <a class="dropdown-item" href="~/@row_mnc.Link">@row_mnc.Name</a>
+         } 
+    </div>
+</li>

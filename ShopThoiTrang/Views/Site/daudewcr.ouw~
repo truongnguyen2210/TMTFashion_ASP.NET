@@ -1,0 +1,89 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-4">
+            @Html.Action("ListCategory", "Module")
+            @Html.Action("ProductBuy", "Module")
+            <div class="card tintuc mt-3">
+                <div class="card-header">
+                    tin tức
+                </div>
+                <div class="card-body">
+                    <div class="mottin-thoitrang">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#"><img src="https://bucket.nhanh.vn/store/7136/art/article_1578036475_33.jpg" width="100%" alt="Alternate Text" /></a>
+                            </div>
+                            <div class="col-6">
+                                <p class="ttt-tieude"><a href="#">SALE OFF 20-50% || TẾT TÝ SALE HẾT Ý || 5-19/1/2020</a></p>
+                                <p class="ttt-ngaydang">03-01-2020</p>
+                                <p class="ttt-loaitin">Tin Khuyến Mãi</p>
+                            </div>
+                        </div>
+                    </div>@*het mottin-thoitrang  *@
+                    <div class="mottin-thoitrang">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="#"><img src="https://bucket.nhanh.vn/store/7136/art/article_1578036475_33.jpg" width="100%" alt="Alternate Text" /></a>
+                            </div>
+                            <div class="col-6">
+                                <p class="ttt-tieude"><a href="#">SALE OFF 20-50% || TẾT TÝ SALE HẾT Ý || 5-19/1/2020</a></p>
+                                <p class="ttt-ngaydang">03-01-2020</p>
+                                <p class="ttt-loaitin">Tin Khuyến Mãi</p>
+                            </div>
+                        </div>
+                    </div>@*het mottin-thoitrang  *@
+                </div>
+            </div>
+            @*  het tin tuc*@
+            <div class="card vitri mt-3">
+                <div class="card-header">
+                    Vị Trí
+                </div>
+                <div class="card-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.451709581085!2d69.22730441546918!3d41.21192577928071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae6194733710f9%3A0x74547ed2e9280ee8!2sTMT%20fashion!5e0!3m2!1svi!2s!4v1606979854077!5m2!1svi!2s"
+                            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+            @*  het vi tri*@
+        </div>
+      @*  het noi dung trai*@
+        <div class="col-8">
+            <div class="row">
+                <div class="col-6 anh-sp">
+                    <img src="https://bucket.nhanh.vn/store/7136/ps/20201202/IMG_6449_1.jpg" width="100%" alt="Alternate Text" />
+                </div>
+                <div class="col-6 pt-5">
+                    <h3 class="ten-sp">ÁO THUN D1ATN110002</h3>
+                    <h5 class="gia-sp">800$</h5>
+                    <p><a href="#">Hướng dẫn chọn size</a></p>
+                    <h5 class="Chonmau">
+                        Chọn Màu:
+                        <a href="#" style="color: orangered;"><i class="fa fa-tshirt"></i></a>
+                        <a href="#" style="color: palevioletred;"><i class="fa fa-tshirt"></i></a>
+                        <a href="#" style="color: gray;"><i class="fa fa-tshirt"></i></a>
+                        <a href="#" style="color: yellow;"><i class="fa fa-tshirt"></i></a>
+                    </h5>
+                    <h5 class="soluong">
+                        Số Lượng:
+                        <input class="text-center" type="number" name="name" value="1" max="10" min="1"/>
+                    </h5>
+                    <div class="row">
+                        <div class="12">
+                            <ul>
+                                <a href="#"><li class="themgiohang">Thêm Vào Giỏ Hàng</li></a>
+                                <a href="#"><li class="muangay">Mua Ngay</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*het noi dung phai*@
+    </div>
+</div>

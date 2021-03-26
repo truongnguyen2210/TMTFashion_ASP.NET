@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelOrder>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger text-uppercase"><strong>tất cả đơn hàng</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Create", "Orders")" class="btn btn-sm btn-info">Add</a>
+                <a href="@Url.Action("Trash", "Orders")" class="btn btn-sm btn-danger">Trash</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-warning text-uppercase">
+                    <th scope="col">Mã Đơn Hàng </th>
+                    <th scope="col">họ tên khách hàng</th>
+                    <th scope="col">trạng thái </th>
+                    <th scope="col">Chức Năng </th>
+                    <th scope="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                <tr>
+                    <th>@row.Code</th>
+                    <td>@row.UserId</td>
+                    <td>@row.DeliveryName</td>
+                    <td>
+                        @if (row.Status == 1)
+                        {
+                            <a href="@Url.Action("Status", "Orders", new { id = row.Id })" class="btn btn-sm btn-dark">
+                                <i class="fa fa-toggle-on"></i>
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Status", "Orders", new { id = row.Id })" class="btn btn-sm btn-dark">
+                                <i class="fa fa-toggle-off"></i>
+                            </a>
+                        }
+
+                        <a href="@Url.Action("Edit", "Orders", new { id = row.Id })" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                        <a href="@Url.Action("Deltrash", "Orders", new { id = row.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i></a>
+                    </td>
+                    <td>@row.Id</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

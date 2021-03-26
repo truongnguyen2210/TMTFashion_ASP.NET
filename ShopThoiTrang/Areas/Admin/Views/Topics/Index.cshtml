@@ -1,0 +1,71 @@
+﻿@model PagedList.IPagedList<ShopThoiTrang.Models.ModelTopic>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger text-uppercase"><strong>DANH SÁCH  CHỦ ĐỀ BÀI VIẾT</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Create", "Topics")" class="btn btn-sm btn-info">Add</a>
+                <a href="@Url.Action("Trash", "Topics")" class="btn btn-sm btn-danger">Trash</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        @Html.Partial("_Message")
+        <table class="table table-bordered table-hover table-striped">
+            <thead>
+                <tr class="bg-warning">
+                    <th scope="col">Tên Mẫu Tin</th>
+                    <th scope="col">Đường Dẫn</th>
+                    <th scope="col">Chức Năng</th>
+                    <th scope="col">Id</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in Model)
+                {
+                    <tr>
+                        <td>@row.Name</td>
+                        <td>@row.Slug</td>
+                        <td>
+                            @if (row.Status == 1)
+                            {
+                                <a href="@Url.Action("Status", "Topics", new { id = row.Id })" class="btn btn-sm btn-dark">
+                                    <i class="fa fa-toggle-on"></i>
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="@Url.Action("Status", "Topics", new { id = row.Id })" class="btn btn-sm btn-dark">
+                                    <i class="fa fa-toggle-off"></i>
+                                </a>
+                            }
+
+                            <a href="@Url.Action("Edit", "Topics", new { id = row.Id })" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                            <a href="@Url.Action("Deltrash", "Topics", new { id = row.Id })" class="btn btn-sm btn-danger"><i class="fa fa-trash-alt"></i></a>
+                        </td>
+                        <td>@row.Id</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    @* het row*@
+    <div class="row">
+        <div class="col-12 text-center">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", "Posts", new { page }))
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @* het phan trang*@
+</div>

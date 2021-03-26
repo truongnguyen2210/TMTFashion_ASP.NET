@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelCategories>
+<div class="card menuleft mt-3">
+    <div class="card-header">
+        Danh Mục Sản Phẩm
+    </div>
+    <div class="card-body p-0">
+        @foreach (var row_r in Model)
+        {
+            @Html.Action("SubListCategory", "Module", new { @id = row_r.Id })
+
+        }
+    </div>
+</div>
+@*  het menuleft*@

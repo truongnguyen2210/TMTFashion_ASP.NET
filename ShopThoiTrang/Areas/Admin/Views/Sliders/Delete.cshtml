@@ -1,0 +1,56 @@
+﻿@model ShopThoiTrang.Models.ModelSlider
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-6 text-danger text-uppercase"><strong>Xóa Sliders</strong></div>
+            <div class="col-6 text-danger text-right">
+                <a href="@Url.Action("Trash", "Sliders")" class="btn btn-sm btn-danger">Preview</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        @Html.Partial("_Message")
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group">
+                    <label>Tên Sliders: </label>
+                    @Html.DisplayFor(model => model.Name)
+                </div>
+                <div class="form-group">
+                    <label>Liên Kết: </label>
+                    @Html.DisplayFor(model => model.Link)
+                </div>
+                <div class="form-group">
+                    <label>Vị Trí: </label>
+                    @Html.DropDownListFor(model => model.Position, new[] {
+                   new SelectListItem { Text = "slideshow", Value = "slideshow" },
+                   new SelectListItem { Text = "banner", Value = "banner" },
+                    new SelectListItem { Text = "Quảng Cáo", Value = "quangcao" } },
+                   new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    <label>Hình Ảnh: </label>
+                    <img src="~/Public/Image/Slider/@Html.DisplayFor(model => model.Img)" width="50%" alt="Alternate Text" />
+                </div>
+                <div class="form-group text-danger">
+                    @ViewBag.Error
+                </div>
+                <div class="form-group">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    }
+                </div>
+            </div>
+            @*  het col-8*@
+        </div>
+        @* het row*@
+    </div>
+</div>

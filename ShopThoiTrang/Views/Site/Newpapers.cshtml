@@ -1,0 +1,52 @@
+﻿@model PagedList.IPagedList<ShopThoiTrang.Models.ModelPost>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Newpapers";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-12 Topic">
+            @Html.Action("listTopic", "Module")
+        </div>
+        <div class="col-12 mt-2">
+            <div class="card text-white">
+                @foreach (var onepos in ViewBag.row_oneposnew)
+                {
+                    <a href="@onepos.Slug"><img class="card-img" src="~/Public/Image/Newspaper/@onepos.Img" alt="Card image"></a>
+                }
+            </div>
+        </div> 
+            <div class="col-12 loai-sanpham">
+                <h3 class="smp-tieude text-center">Tin Tức</h3>
+            </div>
+            @foreach (var item in Model)
+            {
+                <div class="col-4">
+                    <div class="card mb-3">
+                        <a href="@item.Slug"><img class="card-img-top" src="~/Public/Image/Newspaper/@item.Img" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <a href="@item.Slug"><h5 class="card-title">@item.Title</h5></a>
+                            <p class="card-text  text-truncate" style="max-width: 400px;">@item.Detail</p>
+                            <p class="card-text"><small class="text-muted">@item.Created_At</small></p>
+                        </div>
+                    </div>
+                </div>@*het 1 tin*@
+            } 
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        @Html.PagedListPager(Model, page => Url.Action("Newpapers", "Site", new { page }))
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    @* het phan trang*@
+</div>
+
+

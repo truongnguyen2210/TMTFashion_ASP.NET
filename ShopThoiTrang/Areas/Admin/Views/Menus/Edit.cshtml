@@ -1,0 +1,85 @@
+﻿@model ShopThoiTrang.Models.ModelMenu
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+@using (Html.BeginForm("Edit", "Menus", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="cart">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-6">
+                    <strong class="text-danger text-uppercase">Sửa Danh Mục</strong>
+                </div>
+                <div class="col-6 float-right text-right">
+                    <a href="@Url.Action("Index", "Menus")" class="btn btn-sm btn-danger">Preview</a>
+                    <button type="submit" class="btn btn-info btn-sm">Save [Change]</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label><strong>Tên Danh Mục(<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Loại Trang (<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.DropDownListFor(model => model.Type, new[]
+                        { new SelectListItem { Text = "Category", Value = "category" },
+                        new SelectListItem { Text = "Custom", Value = "custom" },
+                       new SelectListItem { Text = "Page", Value = "page" } },
+                       new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Vị Trí(<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.DropDownListFor(model => model.Position, new[]
+                        { new SelectListItem { Text = "Top", Value = "top" },
+                        new SelectListItem { Text = "Left", Value = "left" },
+                       new SelectListItem { Text = "Bottom", Value = "Bottom" },
+                       new SelectListItem { Text = "Right", Value = "right" },
+                       new SelectListItem { Text = "Center", Value = "center" },
+                    new SelectListItem { Text = "Between", Value = "between" } },
+                       new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Position, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group text-danger">
+                        @ViewBag.Error
+                    </div>
+                    <div class="form-group pos-absolute invisible">
+                        @Html.EditorFor(model => model.Created_At, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Created_By, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.Link, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.EditorFor(model => model.TableId, new { htmlAttributes = new { @class = "form-control" } })
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label><strong>Chủ Đề Bố(<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.DropDownListFor(model => model.ParentId, (SelectList)ViewBag.ListParent, "[----None----]", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.ParentId, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Thứ Tự(<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.EditorFor(model => model.Orders, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Orders, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        <label><strong>Trạng Thái (<spant class="text-danger">*</spant>)</strong></label>
+                        @Html.DropDownListFor(model => model.Status, new[]
+                        { new SelectListItem { Text = "Xuất Bản", Value = "1" },
+                       new SelectListItem { Text = "Chưa Xuất Bản", Value = "2" } },
+                       new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

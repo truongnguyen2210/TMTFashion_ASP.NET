@@ -1,0 +1,96 @@
+﻿@model List<ShopThoiTrang.Models.ModelCart>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutSite.cshtml";
+}
+@if (Model.Count() != 0)
+{
+    <div class="gio-hang">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="gio-hang-cua-ban"><i class="fa fa-cart-plus"></i>Giỏ Hàng Của Bạn</h3>
+                </div>
+                <div class="col-8">
+                    @{ long tongtien = 0;}
+                    @foreach (var row in Model)
+                    {
+                        <div class="row mot-sp-gh mb-2">
+                            <div class="col-3"><img src="~/Public/Image/Product/@row.Product.Img" width="100%" alt="Alternate Text" /></div>
+                            <div class="col-9 thong-tin-san-pham-gh">
+                                <h3 class="Ten-sp">@row.Product.Name</h3>
+                                <h5 class="gia-sp mb-2">Giá: @row.Product.Price$ <del> @row.Product.PriceSale$</del></h5>
+                                <a href="@Url.Action("DeleteItem","Cart", new {productId = @row.Product.Id})"><button class="btn btn-outline-info btn-sm">Xóa</button></a>
+                                <a href="#"><button class="btn btn-outline-info btn-sm">Mua Sau</button></a>
+                                <h5 class="soluong mt-1">
+                                    Số Lượng:
+                                    <input class="text-center" type="number" name="name" value="@row.Quantity" max="10" min="1" />
+
+                                </h5>
+                            </div>
+                        </div>
+                        @* heets mot san pham*@
+                      
+                    }
+                </div>
+                <div class="col-4">
+                    <div class="row khuyen-mai">
+                        <div class="col-12">
+                            <p>Nhập Mã Khuyến Mãi</p>
+                            <input type="text" name="name" value="CCQ1811D" />
+                        </div>
+                    </div>
+                    <div class="row thanh-tien">
+                        <div class="col-6"><h3 class="Ten-sp">Tạm Tính:</h3></div>
+                        <div class="col-6"><h3 class="Ten-sp">@tongtien$</h3></div>
+                        <div class="col-6"><h3 class="Ten-sp">Thành Tiền:</h3></div>
+                        <div class="col-6">
+                            <h5 class="gia-sp">@tongtien$</h5>
+                            <small>(Đã bao gồm vat nếu có)</small>
+                        </div>
+                    </div>
+                    <div class="row thanh-toan">
+                        <div class="col-12">
+                            <a href="#"><button type="button" class="btn btn-danger btn-lg btn-block">Thanh Toan</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+<div class="gio-hang">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="gio-hang-cua-ban"><i class="fa fa-cart-plus"></i>Giỏ Hàng Của Bạn</h3>
+            </div>
+            <div class="col-8">
+                <script>alert("Chưa Có Sản Phẩm Trong Giỏ Hàng")</script>
+                <div class="alert-dark">Chưa Có Sản Phẩm Nào Được Chọn</div>
+            </div>
+            <div class="col-4">
+                <div class="row khuyen-mai">
+                    <div class="col-12">
+                        <p>Nhập Mã Khuyến Mãi</p>
+                        <input type="text" name="name" value="CCQ1811D" />
+                    </div>
+                </div>
+                <div class="row thanh-tien">
+                    <div class="col-6"><h3 class="Ten-sp">Tạm Tính:</h3></div>
+                    <div class="col-6"><h3 class="Ten-sp">0$</h3></div>
+                    <div class="col-6"><h3 class="Ten-sp">Thành Tiền:</h3></div>
+                    <div class="col-6">
+                        <h5 class="gia-sp">0$</h5>
+                        <small>(Đã bao gồm vat nếu có)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+

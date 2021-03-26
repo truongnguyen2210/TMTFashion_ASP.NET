@@ -1,0 +1,14 @@
+﻿@model IEnumerable<ShopThoiTrang.Models.ModelCategories>
+@{ var row = ViewBag.row_cr;}
+<ul class="list-group">
+    <li class="list-group-item mnl-menucha">
+        <a href="@row.Slug"> @row.Name</a>
+        <ul class="list-group mnl-menucon">
+            @foreach (var row_mnl in Model)
+            {
+            <a href="@row_mnl.Slug"> <li class="list-group-item">@row_mnl.Name</li></a>
+            }
+        </ul>
+    </li>
+</ul>
+

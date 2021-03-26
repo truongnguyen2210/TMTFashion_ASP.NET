@@ -1,0 +1,118 @@
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\ShopThoiTrang.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\ShopThoiTrang.pdb
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csc.exe
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csc.exe.config
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csc.rsp
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csi.exe
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csi.rsp
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\vbc.exe
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\vbc.exe.config
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\vbc.rsp
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Helpers.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Mvc.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Razor.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Razor.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Razor.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Razor.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Helpers.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Mvc.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+C:\Users\Asus\Desktop\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.csprojAssemblyReference.cache
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\ShopThoiTrang.dll.config
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\ShopThoiTrang.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\ShopThoiTrang.pdb
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csc.exe
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csc.exe.config
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csc.rsp
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csi.exe
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\csi.rsp
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.AppContext.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\vbc.exe
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\vbc.exe.config
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\vbc.rsp
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.SqlServer.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Helpers.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Mvc.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Razor.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Razor.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\EntityFramework.SqlServer.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Razor.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Webpages.Razor.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Helpers.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Mvc.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CoreCompileInputs.cache
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.csproj.CopyComplete
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.pdb
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\PagedList.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\PagedList.Mvc.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\PagedList.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\PagedList.Mvc.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\WebActivatorEx.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Antlr3.Runtime.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Newtonsoft.Json.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Optimization.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\WebGrease.dll
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Antlr3.Runtime.pdb
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\Newtonsoft.Json.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\bin\System.Web.Optimization.xml
+C:\Users\Asus\OneDrive\Máy tính\TRUONGTHANHNGUYEN_C#_MVC\TRUONGTHANHNGUYEN_2118110288\ShopThoiTrang\obj\Debug\ShopThoiTrang.csprojAssemblyReference.cache

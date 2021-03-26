@@ -1,0 +1,358 @@
+﻿/*-----------------------------------------reset css---------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*css trang tin tuc*/
+.card.text-white {
+    border: none;
+}
+/*css cho gio hang*/
+h3.gio-hang-cua-ban {
+    font-size: 25px;
+    font-family: 'Barlow Condensed';
+    border-bottom: 1px solid;
+    /* border-left: 1px solid; */
+    color: #000000cc;
+    padding-bottom: 6px;
+}
+
+.thanh-toan {
+    margin-top: 5px;
+    margin-left: 2px
+}
+
+.thanh-tien {
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+
+.khuyen-mai {
+    background-color: white;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px
+}
+
+.mot-sp-gh {
+    background-color: #fefbfb;
+    border-radius: 5px
+}
+
+.gio-hang {
+    background-color: #8080801a;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.col-9.thong-tin-san-pham-gh {
+    padding-top: 30px;
+    /* padding-right: 30%; */
+    padding-left: 20%;
+    /* text-align: right; */
+}
+
+/*css cho trang chi tiet san pham*/
+h5.mo-ta {
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+p.nd-mo-ta {
+    font-size: 19px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.mua-hang.da-co-hang {
+    background-color: #0c0200e6;
+    color: #ffffffc9;
+    font-size: 20px;
+}
+
+.mua-hang.them-gio-hang {
+    border: 1px solid #F44336;
+}
+
+.da-co-hang {
+    margin-bottom: 20px;
+}
+
+h5.chinh-sach-mua-hang {
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mua-hang {
+    border: 1px solid;
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h5.soluong {
+    font-size: 20px;
+    font-family: 'Oswald';
+}
+
+h5.Chonmau {
+    font-size: 20px;
+    font-family: 'Oswald';
+}
+
+a {
+}
+
+h5.gia-sp {
+    font-size: 26px;
+    color: #b90728;
+    font-family: 'Oswald';
+}
+
+h3.ten-sp {
+    font-size: 29px;
+    font-family: 'Oswald', sans-serif;
+}
+
+i.fa.fa-tshirt:hover {
+    border: 1px solid #FF5722;
+}
+
+i.fa.fa-tshirt {
+    padding: 5px;
+}
+/*css cho banner*/
+.col-6.bn-trai {
+    overflow: hidden;
+}
+
+    .col-6.bn-trai:hover img {
+        transform: scale(1.5);
+        transition: 0.5s;
+    }
+/*css cho header*/
+section.clearfix.header.bg-white {
+    height: 27px;
+}
+
+.phone {
+    font-family: 'Oswald', sans-serif;
+}
+
+ul.tk-con {
+    position: absolute;
+    z-index: 1000000;
+    background-color: #0e0d00ed;
+    padding: 13px 53px;
+    visibility: hidden;
+    /* top: 1px; */
+    /* bottom: -98px; */
+    top: 27px;
+    color: #ffffffe0;
+}
+
+    ul.tk-con li a {
+        color: #ffffffe6;
+    }
+
+li.tk-cha {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid; */
+    font-family: 'Open Sans Condensed';
+}
+
+.taikhoan:hover .tk-con {
+    visibility: visible;
+}
+
+/*css tieu defs */
+h3.smp-tieude.text-center {
+    margin-top: 13px;
+    font-family: 'Open Sans Condensed';
+    border-bottom: 1px solid #CDDC39;
+    border-top: 1px solid beige;
+    /* display: inline-block; */
+    /* margin: auto; */
+}
+/*css gia khuyen mai*/
+i.sp-r {
+    color: #3527279c;
+    font-family: fantasy;
+}
+/*css tin tuc*/
+p.ttt-loaitin {
+    font-size: 14px;
+    margin-top: -19px;
+    color: #4993b5;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed';
+}
+
+p.ttt-ngaydang {
+    font-size: 10px;
+    margin-top: -20px;
+    color: #708090a6;
+}
+/*css menu left*/
+ul.list-group.mnl-menucon a li:hover {
+    background-color: #fedc9c;
+}
+
+ul.list-group.mnl-menucon {
+    /* position: fixed; */
+    /* z-index: 10000; */
+    position: absolute;
+    top: 0;
+    right: -350px;
+    z-index: 1000;
+    width: 100%;
+    visibility: hidden;
+    transition: 0.2s;
+    text-align: center;
+    border-left: 3px solid #92f051;
+    border-right: 3px solid #92f051;
+}
+
+
+li.list-group-item.mnl-menucha:hover .mnl-menucon {
+    visibility: visible;
+}
+
+li.list-group-item.mnl-menucha {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
+
+    li.list-group-item.mnl-menucha:hover {
+        background-color: #fedc9c;
+        border-left: 3px solid #92f051;
+    }
+
+p a {
+    color: #9E9E9E;
+}
+
+
+
+a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #494a48;
+}
+
+
+
+    a:hover {
+        color: burlywood;
+    }
+
+.col-md-3.col-lg-3.col-xl-3.mx-auto.mt-3 p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.card.item-menuleft {
+    /* border-top: none; */
+    /* border-left: none; */
+    /* border-right: none; */
+    border-radius: 5px;
+    border: none;
+}
+
+.card-footer.sp-layer2 {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.card-header {
+    text-align: center;
+    color: #494a48;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+
+button.btn.btn-link.btn-block.text-left {
+    color: #494a48;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center !important;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold {
+    color: wheat;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+.col-sm-12.text-center.xemthem a {
+    color: black;
+    padding: 0px 50px;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.col-sm-12.text-center.xemthem:hover i {
+    transform: translateX(25px);
+    transition: 0.5s;
+}
+
+body {
+    font-family: 'PN', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    width: 100%;
+    color: #484848;
+}
+
+
+li.list-group-item a {
+    color: #494a48;
+    font-size: 17px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+}
+
+/*-----------------------------------------css cho noi dung ---------------------------------------*/
+
+/*-----------------------------------------css cho mainmenu---------------------------------------*/
+a.navbar-brand.ten-shop img {
+    width: 157px;
+}
+
+a.nav-link {
+    font-size: 17px;
+    color: white;
+    padding: 3px 0px;
+}
+
+    a.nav-link:hover {
+        border-bottom: 1px solid white;
+    }
+
+section.clearfix.mainmenu {
+    background-color: #494a48;
+}
+
+.ten-shop {
+    font-family: 'Nosifer', cursive;
+    font-size: 30px;
+    color: #484848 !important;
+    font-weight: bold;
+}
+/*-----------------------------------------css cho footer---------------------------------------*/
+section.clearfix.footer {
+    background-color: #494a48;
+}

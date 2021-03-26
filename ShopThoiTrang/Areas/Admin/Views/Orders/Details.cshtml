@@ -1,0 +1,107 @@
+﻿@model ShopThoiTrang.Models.ModelOrder
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ModelOrder</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreateDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExportDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExportDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Update_At)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Update_At)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Update_By)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Update_By)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
